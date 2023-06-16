@@ -1,0 +1,229 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(99,240,251,1) 45%, rgba(255,255,255,1) 88%);
+}
+#root{
+    padding: 1px;
+    max-width: 800px;
+    margin: auto;
+    
+}
+.page-logo{
+    width: 50%;
+    float: left;
+}
+.page-header-user{
+    width: 50%;
+    float: right;
+}
+.page-header{
+    height: 50px;
+}
+.link{
+    font-size: 12pt;
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+.err404{
+    text-align: center;
+    color : red;
+}
+.bolder{
+   font-weight: bolder;
+   font-style: oblique; 
+}
+.page-header-user-info{
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding: 8px;
+}
+.red{
+    color: red;
+}
+.page-header-dropdown{
+    position: relative;
+    user-select: none;
+    float: right;
+}
+.page-header-dropdown-text{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    right: 0;
+}
+.page-header-dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  .page-header-dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none !important;
+    display: block;
+  }
+.page-header-dropdown-item:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.page-header-dropdown:hover .page-header-dropdown-menu{
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.page-header-dropdown-text:hover .page-header-dropdown-text{
+  background-color: #3e8e41;
+}
+.input-cus{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+.input-cus label{
+    font-weight: bold;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+.input-cus input{
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    padding: 5px;
+    max-width: 430px;
+    text-align: center;
+}
+.register, .login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border: #3e8e41 4px;
+    border-style: outset;
+    margin: 20px auto
+}
+input[type = "submit"]{
+    display: block;
+    margin: 10px auto;
+    border: lightblue 5px inset;
+    background-color: lightblue;
+    padding: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+    
+}
+
+
+.profile-edit-field{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+.profile-edit-field-label{
+    width: 30%;
+    text-align: center;
+    float:left;
+    font-size: larger;
+    font-style: italic;
+}
+.profile-edit-field-value{
+    width: 30%;
+    float: left;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+.profile-input{
+    width: 30%;
+}
+.profile-edit-field button{
+    width: 20%;
+    padding: 5px;
+    margin: auto;
+}
+.change-button{
+    padding: 5px;
+}
+.button-1{
+    padding: 5px;
+    font-size: 12pt;
+    background-color: lightblue;
+    width: fit-content;
+    margin: 10px auto;
+    cursor: pointer;
+    border: 2px inset gray;
+}
+.button-2{
+    padding: 2px;
+    font-size: 12px;
+    background-color: lightblue;
+    width: fit-content;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px inset gray;
+}
+.page-heading-1{
+    text-decoration: underline;
+}
+.page-heading-1 h1{
+    text-align: center;
+}
+.post-creator{
+    padding: 10px;
+}
+.post-paragraph{
+    border: 1px solid black;
+    padding: 5px;
+
+}
+.post-paragraph .text-paragraph{
+    text-indent: 20px;
+    padding: 10px;
+}
+.add-btns{
+    display: flex;
+
+}
+.inline-edit{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+
+}
+.inline-edit div{
+    margin: auto;
+    width: 30%;
+}
+.inline-edit-label{
+    margin: 0 !important;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+.inline-edit-text,
+.inline-checkbox,
+.inline-edit-date
+{
+    width: 60% !important;
+}
+*[contenteditable = true]{
+    padding: 10px;
+}
